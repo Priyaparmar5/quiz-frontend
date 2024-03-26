@@ -1,0 +1,74 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What is JavaScript?",
+      "options": [
+        "A markup language",
+        "A programming language",
+        "A stylesheet language",
+        "A database language"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "question": "Which keyword is used to declare variables in JavaScript?",
+      "options": ["var", "let", "const", "all of the above"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 3,
+      "question": "What is the result of typeof null in JavaScript?",
+      "options": ["null", "object", "undefined", "number"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "question": "Which method is used to add a new element to the end of an array?",
+      "options": ["push()", "unshift()", "append()", "add()"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "question": "What is the output of typeof NaN in JavaScript?",
+      "options": ["NaN", "number", "undefined", "string"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "question": "Which operator is used for exponentiation in JavaScript?",
+      "options": ["**", "^", "^^", "^^^"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "question": "What is the result of '5' + 3 in JavaScript?",
+      "options": ["53", "8", "35", "undefined"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "question": "Which method is used to remove the last element from an array?",
+      "options": ["pop()", "shift()", "delete()", "removeLast()"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the 'use strict' directive in JavaScript?",
+      "options": [
+        "To enable strict mode",
+        "To disable strict mode",
+        "To declare a variable",
+        "To define a function"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "question": "Which built-in method returns the length of a string?",
+      "options": ["length()", "size()", "count()", "None of the above"],
+      "correctAnswer": 3
+    }
+  ]
+}
