@@ -17,6 +17,9 @@ export const userSlice = createSlice({
         removeToken: (state) => {
             state.token = null;
         },
+        removeUser: (state) => {
+            state.user = null;
+        },
     },
 });
 
@@ -29,7 +32,7 @@ export const tokenSelector = (state) =>
 
 const { actions, reducer } = userSlice;
 
-export const { setUser, setToken, removeToken } = actions;
+export const { setUser, setToken, removeToken , removeUser} = actions;
 
 export const setuser = (data) => {
     setUser(data);

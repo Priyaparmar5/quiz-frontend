@@ -3,9 +3,8 @@ import React, { useState, useEffect } from 'react';
 function Results() {
   const [results, setResults] = useState([]);
 
-  useEffect(() => {
-    // Fetch user's quiz results from backend
-  }, []);
+  // useEffect(() => {
+  // }, []);
 
   return (
     <div>

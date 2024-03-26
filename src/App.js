@@ -6,7 +6,7 @@ import Register from './components/Register';
 import Quiz from './components/Quiz';
 import Results from './components/Results';
 import Navbar from './components/Navbar';
-import './App.css'; // Import CSS file
+import './App.css'; 
 
 function App() {
   return (

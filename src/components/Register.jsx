@@ -1,7 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios';
 import { signUp } from '../services/auth';
 
 function Register() {
@@ -17,22 +16,16 @@ function Register() {
     password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required')
   });
 
-  const handleSubmit = async (values, { setSubmitting }) => {
+  const handleSubmit = async (values, { setSubmitting ,resetForm}) => {
     try {
-console.log(values,"vLLLL");
-        const response = await signUp(values);
-  
-      // Log the response or handle it as needed
-      console.log('API Response:', response.data);
-  
-      // Reset the form state if necessary
+      const response = await signUp(values);
+      resetForm();
       setSubmitting(false);
     } catch (error) {
-      // Handle errors if the request fails
       console.error('Error:', error);
-  
-      // Reset the form state if necessary
+      resetForm();
       setSubmitting(false);
+      alert(error);
     }
   };
 

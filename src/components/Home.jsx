@@ -20,6 +20,7 @@ function Home() {
     } else {
       setError('');
       setQuizIndex(prevIndex => prevIndex + 1);
+      setUserAnswers([]); 
     }
   };
 
@@ -27,9 +28,7 @@ function Home() {
     setUserAnswers(prevAnswers => [...prevAnswers, selectedOption]);
   };
 
-  // const getCurrentQuizId = () => {
-  //   return quizData.quiz[quizIndex].id; 
-  // };
+
 
   useEffect(() => {
     let timer;
@@ -81,7 +80,6 @@ function Home() {
 
   const submitQuiz =async () => {
     const response = await addResult(userAnswers); 
-console.log(response,"Ress");
   };
 
   return (

@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, InternalAxiosRequestConfig } from "axios";
+import axios from "axios";
 import { Store } from "redux";
 import { ToastShow } from "../redux/slices/toastSlice";
 import { removeToken } from "../redux/slices/authSlice";
@@ -8,7 +8,6 @@ import moment from "moment-timezone";
 export const setupAxios = (store) => {
   axios.interceptors.request.use((request) => {
     const storeData = store.getState();
-    console.log(storeData,"storeeesss");
     const authToken = storeData.auth.token;
     request.headers.Timezone = moment.tz.guess();
     if (authToken) {
