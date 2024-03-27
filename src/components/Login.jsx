@@ -32,11 +32,11 @@ function Login() {
         dispatch(setToken(response.data.token));
         dispatch(setUser(response?.data?.user));
         resetForm();
-        navigate('/'); 
+        navigate("/");
       } else {
         setFieldError("email", response.data.error);
         resetForm();
-        alert("not valid credential")
+        alert("Invalid credentials");
       }
     } catch (error) {
       console.log(error);
@@ -44,7 +44,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       <Formik
         initialValues={initialValues}
@@ -53,23 +53,25 @@ function Login() {
       >
         {({ isSubmitting }) => (
           <Form>
-            <div>
-              <Field type="email" name="email" placeholder="Email" />
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <Field  type="email" name="email" id="email" />
               <ErrorMessage
                 name="email"
                 component="div"
                 className="error-message"
               />
             </div>
-            <div>
-              <Field type="password" name="password" placeholder="Password" />
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <Field type="password" name="password" id="password" />
               <ErrorMessage
                 name="password"
                 component="div"
                 className="error-message"
               />
             </div>
-            <button type="submit" disabled={isSubmitting}>
+            <button type="submit" className="login-button" disabled={isSubmitting}>
               Login
             </button>
           </Form>

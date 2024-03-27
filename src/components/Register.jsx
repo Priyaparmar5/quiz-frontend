@@ -30,7 +30,7 @@ function Register() {
   };
 
   return (
-    <div>
+    <div className="register-container">
       <h2>Register</h2>
       <Formik
         initialValues={initialValues}
@@ -38,20 +38,20 @@ function Register() {
         onSubmit={handleSubmit}
       >
         {({ isSubmitting }) => (
-          <Form>
-            <div>
+          <Form className="register-form"> 
+            <div className="form-field">
               <Field type="text" name="username" placeholder="Username" />
               <ErrorMessage name="username" component="div" className="error-message" />
             </div>
-            <div>
+            <div className="form-field"> 
               <Field type="email" name="email" placeholder="Email" />
               <ErrorMessage name="email" component="div" className="error-message" />
             </div>
-            <div>
+            <div className="form-field"> 
               <Field type="password" name="password" placeholder="Password" />
               <ErrorMessage name="password" component="div" className="error-message" />
             </div>
-            <button type="submit" disabled={isSubmitting}>Register</button>
+            <button type="submit" disabled={isSubmitting} className="register-button">Register</button> {/* Apply a button class */}
           </Form>
         )}
       </Formik>

@@ -1,7 +1,7 @@
-import { axiosPost } from '../axios/axios';
+import { axiosGet, axiosPost } from '../axios/axios';
 
-export const login = (user) => {
-  return axiosPost('/user/login', user);
+export const getResult = (id) => {
+  return axiosGet(`/quiz/result/${id}`);
 };
 export const addResult = (data) => {
   return axiosPost('/quiz/add-result', data);

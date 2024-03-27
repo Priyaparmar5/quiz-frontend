@@ -1,0 +1,104 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What is React.js?",
+      "options": [
+        "A front-end JavaScript framework",
+        "A back-end JavaScript runtime",
+        "A database management system",
+        "A programming language"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "question": "What does JSX stand for in React.js?",
+      "options": ["JavaScript XML", "JavaScript Extension", "JavaScript Syntax", "JavaScript eXtension"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "question": "Which lifecycle method is invoked after rendering in React.js?",
+      "options": [
+        "componentDidMount",
+        "componentDidUpdate",
+        "componentWillUnmount",
+        "componentWillUpdate"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "question": "What is the virtual DOM in React.js?",
+      "options": [
+        "A representation of the actual DOM in memory",
+        "An alternative to HTML",
+        "A way to define component styling",
+        "A built-in testing framework"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is NOT a way to create components in React.js?",
+      "options": [
+        "Class components",
+        "Functional components",
+        "Pure components",
+        "Script components"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of props in React.js?",
+      "options": [
+        "To pass data from parent to child components",
+        "To define component styles",
+        "To handle user interactions",
+        "To manage component state"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "question": "What is the React.js library used for?",
+      "options": [
+        "Building user interfaces",
+        "Managing server-side logic",
+        "Creating databases",
+        "Handling HTTP requests"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a React.js router library?",
+      "options": ["React Router", "React Navigation", "Vue Router", "Express Router"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of state in React.js?",
+      "options": [
+        "To store component data that may change over time",
+        "To define component structure",
+        "To handle user authentication",
+        "To manage server-side requests"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "question": "Which method is used to update component state in React.js?",
+      "options": [
+        "setState()",
+        "updateState()",
+        "modifyState()",
+        "changeState()"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What is Node.js?",
+      "options": [
+        "A front-end JavaScript framework",
+        "A back-end JavaScript runtime",
+        "A database management system",
+        "A programming language"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is NOT a core module in Node.js?",
+      "options": ["fs", "http", "express", "os"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 3,
+      "question": "What is the main purpose of npm in Node.js?",
+      "options": [
+        "To manage project dependencies",
+        "To create HTML templates",
+        "To interact with a database",
+        "To write unit tests"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "question": "Which event is emitted when an error occurs in Node.js?",
+      "options": ["error", "exception", "fail", "crash"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "question": "What is the primary use of the 'require' function in Node.js?",
+      "options": [
+        "To include external modules",
+        "To define global variables",
+        "To declare constants",
+        "To create new objects"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a popular Node.js web framework?",
+      "options": ["Express", "Angular", "React", "Vue.js"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of the 'process' object in Node.js?",
+      "options": [
+        "To provide information about the current process",
+        "To handle file operations",
+        "To execute shell commands",
+        "To interact with the DOM"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is used to handle asynchronous operations in Node.js?",
+      "options": ["Callbacks", "Promises", "Async/await", "All of the above"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 9,
+      "question": "What is the default web server in Node.js?",
+      "options": ["Express", "http", "Apache", "Nginx"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the 'fs' module in Node.js?",
+      "options": [
+        "To interact with the file system",
+        "To handle HTTP requests",
+        "To create server-side templates",
+        "To manage project dependencies"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}
